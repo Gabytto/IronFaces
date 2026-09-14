@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #333;
+    min-height: 6em;
+    display: flex;
+}
+
+.logo {
+    max-height: 6em;
+}
+
+.banner {
+    max-height: 6em;
+}
