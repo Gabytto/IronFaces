@@ -8,12 +8,16 @@
     background-color: #333;
     min-height: 6em;
     display: flex;
+    align-items: center;
 }
 
 .logo {
     max-height: 6em;
 }
-
-.banner {
-    max-height: 6em;
+.nav__list {
+    display: flex;
+    gap: 2em;
+}
+ul {
+    list-style: none;
 }
