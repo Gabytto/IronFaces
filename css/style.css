@@ -21,3 +21,23 @@
 ul {
     list-style: none;
 }
+main {
+    padding: 1em;
+
+}
+.box__principal {
+    background-color:blanchedalmond;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box__grande {
+    background-color: #f0f0f0;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
