@@ -66,4 +66,8 @@ main {
 .icono {
     height: 2em;
     width: 2em;
+    align-items: center;
+}
+.parrafo {
+    
 }
