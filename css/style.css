@@ -13,7 +13,7 @@
 }
 
 .header {
-    background-color: #f39d1b94;
+    background-color: #000000;
     min-height: 6em;
     display: flex;
     align-items: center;
@@ -27,15 +27,25 @@
     display: flex;
     gap: 2em;
 }
+.nav__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav__link:hover {
+    color: #eb50ff;
+}
 ul {
-    list-style: none;
+    list-style: none;    
 }
 main {
     padding: 1em;
+    background-color: black;
 
 }
 .box__principal {
-    background-color:blanchedalmond;
+    background-color:rgba(93, 90, 255, 0.281);
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,7 +54,8 @@ main {
     gap: 2em;
 }
 .box__grande {
-    background-color: #f0f0f0;
+    background-color: black;
+    color: white;
     padding: 2em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +65,7 @@ main {
 
 }
 .box__chico {
-    background-color: #e0e0e0;
+    background-color: #eb50ff3f;
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -67,7 +78,4 @@ main {
     height: 2em;
     width: 2em;
     align-items: center;
-}
-.parrafo {
-    
 }
