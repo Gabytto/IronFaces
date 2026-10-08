@@ -13,7 +13,7 @@
 }
 
 .header {
-    background-color: #000000;
+    background-image: url('../img/banner.jfif');
     min-height: 6em;
     display: flex;
     align-items: center;
@@ -29,23 +29,28 @@
 }
 .nav__link {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--primary);
     font-weight: bold;
     transition: color 0.3s ease;
 }
 .nav__link:hover {
-    color: #eb50ff;
+    color: var(--accent);
 }
 ul {
     list-style: none;    
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+    color: var(--accent);
+}
 main {
     padding: 1em;
-    background-color: black;
+    background-color: var(--background);
 
 }
 .box__principal {
-    background-color:rgba(93, 90, 255, 0.281);
+    background-image: url('../img/banner.jfif');
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -65,7 +70,7 @@ main {
 
 }
 .box__chico {
-    background-color: #eb50ff3f;
+    background-color: var(--background);
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -78,4 +83,11 @@ main {
     height: 2em;
     width: 2em;
     align-items: center;
+}
+/********** PALETA DE COLORES ***********/
+:root {
+    --primary: #00D2FF; /*Cian Neón*/
+    --secondary: #2B3545; /*Gris Metálico*/
+    --accent: #ff00d4b2; /*Fucsia Neón*/
+    --background: #081426; /*Azul Oscuro*/
 }
