@@ -11,6 +11,9 @@
     font-family: 'Cinzel', serif;
     font-size: 1rem;
 }
+html, body, main {
+    scroll-behavior: smooth;
+}
 
 .header {
     background-image: url('../img/banner.jfif');
@@ -27,11 +30,19 @@
     display: flex;
     gap: 2em;
 }
+.lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
 .nav__link {
     text-decoration: none;
     color: var(--primary);
     font-weight: bold;
     transition: color 0.3s ease;
+    background-color: var(--background);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
 }
 .nav__link:hover {
     color: var(--accent);
@@ -42,11 +53,12 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel', serif;
-    color: var(--accent);
+    color: var(--primary);
+    font-weight: bolder;
 }
 main {
     padding: 1em;
-    background-color: var(--background);
+    background-color: black;
 
 }
 .box__principal {
@@ -59,7 +71,7 @@ main {
     gap: 2em;
 }
 .box__grande {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.877);
     color: white;
     padding: 2em;
     border-radius: 0.5em;
@@ -78,6 +90,12 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    justify-content: center;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.box__chico:target {
+    background-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent);
 }
 .icono {
     height: 2em;
