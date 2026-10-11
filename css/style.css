@@ -102,6 +102,10 @@ main {
     width: 2em;
     align-items: center;
 }
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
 /********** PALETA DE COLORES ***********/
 :root {
     --primary: #00D2FF; /*Cian Neón*/
