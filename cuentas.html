@@ -18,36 +18,50 @@
             </ul>
     </header>
     <main>
-        <div class="box__principal">
-            <div class="box__grande">
-                <div class="box__chico"><h1>Panel de cuentas</h1></div>
-                <div class="box__chico"><h1>Servidor de Lineage 2 Interlude</h1></div>
+    <div class="box__principal" id="box__cuentas">
+        <!-- Bloque Superior: Encabezados -->
+        <div class="box__grande">
+            <div class="box__chico"><h1>Panel de cuentas</h1></div>
+            <div class="box__chico"><h1>Servidor de Lineage 2 Interlude</h1></div>
+        </div>
+
+        <!-- Bloque Inferior: Formularios Lado a Lado -->
+        <div class="box__grande">
+            <!-- Columna Izquierda: Crear Cuenta -->
+            <div class="box__chico">
+                <h2>Crear cuenta</h2>
+                <form class="formulario">
+                    <label for="create-name">Nombre de la cuenta:</label>
+                    <input type="text" id="create-name">
+
+                    <label for="create-pass">Contraseña:</label>
+                    <input type="password" id="create-pass">
+
+                    <label for="create-email">E-mail:</label>
+                    <input type="email" id="create-email">
+
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
             </div>
-            <div class="box__grande" id="formulario">
-                <h1 class="box__chico">Crear cuenta</h1>
-                <div class="box__chico">
-                    <label for="name">Nombre de la cuenta: </label>
-                    <input type="text" id="name">
-                    <label for="pass">Contraseña: </label>
-                    <input type="password" id="pass">
-                    <label for="email">E-mail: </label>
-                    <input type="mail" id="email">
-                    <input type="submit" name="enviar" id="enviar">
-                </div>
-            </div>
-            <div class="box__grande" id="formulario">
-                <h1 class="box__chico">Recuperar contraseña</h1>
-                <div class="box__chico">
-                    <label for="name">Nombre de la cuenta: </label>
-                    <input type="text" id="name">
-                    <label for="pass">Contraseña: </label>
-                    <input type="password" id="pass">
-                    <label for="email">E-mail: </label>
-                    <input type="mail" id="email">
-                    <input type="submit" name="enviar" id="enviar">
-                </div>
+
+            <!-- Columna Derecha: Recuperar Contraseña -->
+            <div class="box__chico">
+                <h2>Recuperar contraseña</h2>
+                <form class="formulario">
+                    <label for="recover-name">Nombre de la cuenta:</label>
+                    <input type="text" id="recover-name">
+
+                    <label for="recover-pass">Contraseña:</label>
+                    <input type="password" id="recover-pass">
+
+                    <label for="recover-email">E-mail:</label>
+                    <input type="email" id="recover-email">
+
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 </body>
 </html>
