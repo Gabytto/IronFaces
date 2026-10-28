@@ -146,6 +146,22 @@ main {
     background-color: var(--accent);
     color: #fff;
 }
+.btn-descarga {
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    background-color: var(--primary);
+    color: #000;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-descarga:hover {
+    background-color: var(--accent);
+    color: #fff;
+}
 .icono {
     height: 2em;
     width: 2em;
@@ -158,4 +174,92 @@ main {
     --secondary: #2B3545; /*Gris Metálico*/
     --accent: #ff00d4b2; /*Fucsia Neón*/
     --background: #081426; /*Azul Oscuro*/
+}
+/* ==========================================
+   ESTILOS ESPECÍFICOS DE DONACIONES
+   ========================================== */
+
+/* Ajustes de layout dentro de box__grande */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.donacion-info, .donacion-tasa {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.donacion-info p, .donacion-tasa p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.lista-tasas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    margin-top: 0.5em;
+}
+
+.lista-tasas li {
+    background-color: var(--background);
+    padding: 0.8em 1.2em;
+    border-radius: 0.4em;
+    border-left: 4px solid var(--primary);
+    color: #fff;
+}
+
+.lista-tasas strong {
+    color: var(--primary);
+}
+
+
+.formulario--donacion {
+    max-width: 500px;
+}
+
+.campo-grupo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.formulario input[type="number"],
+.select-donacion {
+    width: 100%;
+    padding: 0.5em 0.6em;
+    border-radius: 0.3em;
+    border: 1px solid var(--primary);
+    background-color: #000;
+    color: #fff;
+    outline: none;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="number"]:focus,
+.formulario input[type="password"]:focus,
+.formulario input[type="email"]:focus,
+.select-donacion:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 5px var(--accent);
+    outline: none;
+}
+
+.select-donacion option {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Badges para métodos de pago */
+.badge-metodo {
+    margin-top: 0.5em;
+    padding: 0.3em 0.8em;
+    background-color: #000;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 0.3em;
+    font-size: 0.85rem;
+    font-weight: bold;
 }

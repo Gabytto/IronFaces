@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Donaciones - L2 Iron-Faces</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./" class="logo"><img src="./img/if_logo.jpeg" alt="Logo Ironfaces" class="logo"></a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./info.html" class="nav__link">Características</a></li>
+                <li class="nav__item"><a href="./descargas.html" class="nav__link">Descargas</a></li>
+                <li class="nav__item"><a href="./donaciones.html" class="nav__link">Donaciones</a></li>
+                <li class="nav__item"><a href="./cuentas.html" class="nav__link">Cuentas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box__principal">
+            
+            <!-- Encabezado / Título de la sección -->
+            <div class="box__grande">
+                <div class="box__chico">
+                    <h1>Donaciones</h1>
+                </div>
+                <div class="box__chico">
+                    <h1>Obtener Donation Coins In Game</h1>
+                </div>
+            </div>
+
+            <!-- Información General y Tasa de Cambio -->
+            <div class="box__grande">
+                <div class="donacion-info">
+                    <h2>Información</h2>
+                    <p>Al donar estas ayudando a mantener el servidor online, cubrir costos de hosting, protección DDoS y desarrollo continuo.</p>
+                    <p>A cambio de tu contribución recibirás <strong>Donate Coins</strong> las cuales podrás utilizar dentro del juego.</p>
+                </div>
+                <div class="donacion-tasa">
+                    <h2>Tasa de Cambio</h2>
+                    <ul class="lista-tasas">
+                        <li><strong>1.000 ARS</strong> = 100 Donate Coins</li>
+                        <li><strong>1 Donate Coins</strong> = 1.000.000 adena</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box__grande">
+                <div class="box__chico full-width">
+                    <h2>Calcular y Solicitar Coins</h2>
+                    <form class="formulario formulario--donacion" action="#" method="POST">
+                        <div class="campo-grupo">
+                            <label for="char_name">Nombre exacto del Personaje (El personaje debe existir):</label>
+                            <input type="text" id="char_name" name="char_name" placeholder="PJ que recibirá los items" required>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="amount">Monto a donar / Cantidad en pesos (ARS):</label>
+                            <input type="number" id="amount" name="amount" min="1" placeholder="Ej: 10" required>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="payment_method">Método de Pago:</label>
+                            <select id="payment_method" name="payment_method" class="select-donacion" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="mercadopago">Mercado Pago</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Proceder al Pago</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Métodos de Pago disponibles -->
+            <div class="box__grande">
+                <div class="box__chico">
+                    <h2>Mercado Pago</h2>
+                    <p>Pago instantáneo con saldo en cuenta, débito o crédito.</p>
+                    <span class="badge-metodo">Acreditación Automática</span>
+                </div>
+                <div class="box__chico">
+                    <h2>Información importante</h2>
+                    <p>Las donaciones son voluntarias y no son reembolsables.</p>
+                    <span class="badge-metodo">Gracias por donar!</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
