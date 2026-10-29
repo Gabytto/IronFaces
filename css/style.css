@@ -346,3 +346,53 @@ main {
     transform: scale(1.15); /* Ajusta el zoom a tu gusto */
     filter: drop-shadow(0 0 8px var(--accent));
 }
+/* ==========================================
+   ADAPTACIÓN PARA MÓVILES (Media Queries)
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* Header y Navegación */
+    .header {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8em;
+    }
+
+    .nav__link {
+        font-size: 0.85rem;
+        padding: 0.4em 0.8em;
+    }
+
+    /* Grillas a 1 columna en móviles */
+    .box__grande {
+        grid-template-columns: 1fr; /* Pasa de 2 columnas a 1 */
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .lista {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cajas internas */
+    .box__chico {
+        padding: 1.5em;
+    }
+
+    /* Footer */
+    .footer__content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer__links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
