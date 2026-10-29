@@ -263,3 +263,86 @@ main {
     font-size: 0.85rem;
     font-weight: bold;
 }
+
+/* ==========================================
+   ESTILOS DEL FOOTER
+   ========================================== */
+.footer {
+    background-color: var(--background);
+    border-top: 1px solid var(--primary);
+    padding: 3em 2em;
+    color: #fff;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5em;
+    align-items: start;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.footer__title {
+    font-family: 'Cinzel', serif;
+    color: var(--primary);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.footer__heading {
+    font-family: 'Cinzel', serif;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.footer__text, .footer__subtext {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 1.5em;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.footer__link:hover {
+    color: var(--accent);
+}
+
+/* Estilo para los links de votación que aún no están listos */
+.footer__link--disabled {
+    font-family: 'Lora', serif;
+    color: #555;
+    font-size: 0.95rem;
+    cursor: not-allowed;
+    font-style: italic;
+}
+.footer__link .icono {
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 2px var(--accent));
+}
+
+.footer__link:hover .icono {
+    transform: scale(1.15); /* Ajusta el zoom a tu gusto */
+    filter: drop-shadow(0 0 8px var(--accent));
+}
